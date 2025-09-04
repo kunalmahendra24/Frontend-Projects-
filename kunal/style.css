@@ -1,0 +1,511 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "AdihausDIN" ;
+    user-select: none;
+
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+@font-face {
+    font-display: swap;
+    font-family: "AdihausDIN";
+    font-style: normal;
+    font-weight: normal;
+    src: url(https://adl-foundation.adidas.com/fonts/adidas/2-3-1/AdihausDIN-Regular.woff2) format("woff2"),url(https://adl-foundation.adidas.com/fonts/adidas/2-3-1/AdihausDIN-Regular.woff) format("woff")
+}
+#main{
+    max-width: 100%;
+    width: 100vw;
+    color: white;
+}
+#ldicon{
+    width: 80px;
+    height: 100px;
+    top: 48vh;
+    left: 48vw;
+    transform: translate(-54%,-50%);
+    position: absolute;
+}
+#loading{
+    position: absolute;
+    width: 100vw;
+    max-width: 100%;
+    height: 100vh;
+    z-index: 1000;
+    background-color: black;
+    transform: translateY(45%);
+}
+#svg{
+    stroke-width: 2px;
+    fill-opacity: 0;
+    stroke: white;
+    stroke-dasharray: 4500;
+    animation: draw 5s ease-in-out;
+    scale: 2.3;
+}
+@keyframes draw {
+    0%{
+        stroke-dashoffset: 4500;
+        scale: 2.5;
+    }
+    100%{
+        stroke-dashoffset: 0;
+        scale: 2.3;
+    }
+}
+#nav{
+    width: 100%;
+    position: absolute;
+    height: 10%;
+    top: 0%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+}
+#nav #navRight {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 3vw;
+}
+#navRight #srchbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+#nav #ico{
+    margin-left: 20px;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    margin-top: 13px;
+}
+#page1{
+    position: relative;
+    width: 100vw;
+    max-width: 100%;
+    height: 100vh;
+    color: white;
+    background-color: black;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+#arrow{
+    color: #fffffff7;
+    font-size: 55px;
+    letter-spacing: 17px;
+    position: absolute;
+    left: 1.3vmin;
+    scale: 4;
+    opacity: 0;
+    transform: translate(-50%,0%);
+    /*text-shadow:
+    0 0 7px #ffffff97,
+    0 0 10px #ffffffd2,
+    0 0 21px #ffffff8d,
+    0 0 42px #fff,
+    0 0 82px rgb(231, 217, 22),
+    0 0 92px rgb(231, 217, 22),
+    0 0 102px rgb(231, 217, 22),
+    0 0 151px rgb(231, 217, 22);*/
+    background-image: url(./FW24_India_Cricket_T20_International_Jersey_Blue_JN0886_22_model-removebg-preview.png);
+    height: 10vh;
+    width: 5vw;
+    background-position: center;
+    background-size: cover;
+    top: 10vh;
+}
+#arr{
+    left: 20%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#arr h1{
+    font-size: 5vw;
+    margin-top: 5vh;
+    margin-left: 10vmax;
+    text-transform: capitalize;
+}
+#arr i{
+    display: flex;
+    justify-content: space-between;
+    width: 25vw;
+    gap: 2vw;
+    color: #f5f5e5;
+}
+#textfs{
+    width: 100%;
+    height: 100%;
+    background-image: url(./bgovr.gif);
+    background-position: center;
+    background-size: cover;
+}
+#page1 #textfs h1{
+    font-size: 15vmin;
+    font-family: "AdihausDIN";
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    text-transform: uppercase;
+    font-weight: 00;
+    letter-spacing: 25px;
+    color: white;
+    opacity: 0;
+}
+#page1 h2{
+    top: 40%;
+    left: 7%;
+    font-size: 14vmin;
+    position: absolute;
+    opacity: 0;
+    scale:1;
+    line-height: 18vmin;
+}
+#page1 h2 i {
+    color: rgb(208, 208, 31);
+}
+#page2{
+    position: relative;
+    width: 100vw;
+    max-width: 100%;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+}
+#page2 #page2img #page2text{
+    position: absolute;
+    top: 92vh;
+    left: 50vw;
+    transform: translate(-50%,-50%);
+}
+#page2 #page2img{
+    position: relative;
+    background-image: url(./ezgif.com-avif-to-jpg-converter-ai-brush-removebg-1myn9nh.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 99%;
+    border-top: black 4px solid;
+}
+#page2 #page2img #pg2btns{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 50vmax;
+    top: 80vh;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    filter: brightness(1);
+}
+#page2 #page2img #pg2btns #btn1{
+    width: 279px;
+    padding: 8px;
+    border: 1px solid white;
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.37);
+    text-align: center;
+    transition: all ease-in-out;
+    transition-duration: 200ms;
+}
+#page2 #page2img #pg2btns #btn1:hover{
+    scale: 1.1;
+    transition: all ease-in-out;
+    transition-duration: 200ms;
+    background-color: black;
+}
+#page2 #page2img #pg2btns #btn2{
+    width: 279px;
+    padding: 8px;
+    border: 1px solid white;
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.37);
+    text-align: center;
+    transition: all ease-in-out;
+    transition-duration: 200ms;
+}
+#page2 #page2img #pg2btns #btn2:hover{
+    scale: 1.1;
+    transition: all ease-in-out;
+    transition-duration: 200ms;
+    background-color: black;
+}
+#page2 h3{
+    font-size: 45px;
+    position: absolute;
+    top: -3%;
+    left: 50%;
+    transform: translate(-50%,0%);
+    text-transform: uppercase;
+    letter-spacing: 1vw;
+    color: transparent;
+    -webkit-text-stroke: yellow;
+    -webkit-text-stroke-width: 0.001px;
+}
+#page3{
+    position: relative;
+    width: 100vw;
+    max-width: 100%;
+    min-height: 100vh;
+    background-color: #f5f5e5;
+    overflow: hidden;
+}
+#page3 #marquee{
+    max-width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 0.5vw;
+    top: 40%;
+    font-family: "Anton";
+    letter-spacing: 1vw;
+    font-size: 4vw;
+    background-color: #f5f5e5;
+    overflow: hidden;
+    border: 2px solid black;
+}
+#page3 #marquee h2{
+    display: block;
+    width: 65vw;
+    color: black;
+    font-family: "Anton";
+    letter-spacing: 1vw;
+    font-size: 4vw;
+}
+#page3 #marquee h2 i{
+    color: transparent;
+    -webkit-text-stroke-color: black;;
+    -webkit-text-stroke-width: 0.1vw;
+    font-family: "Anton";
+}
+#page3 #yeezyImg{
+    position: absolute;
+    background-image: url(./yeezy01.png);
+    background-position: center;
+    background-size: cover;
+    height: 580px;
+    width: 580px;
+    top: 40vh;
+    left: 65vw;
+    transform: translate(-50%,-50%) rotate(40deg);
+    transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+    z-index: 99;
+}
+.ellipse{
+    height: 100px;
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.159);
+    border-radius: 50%;
+    filter: blur(30px);
+    position: absolute;
+    z-index: 9;
+    opacity: 1;
+    top: 80vh;
+    left: 55vw;
+    transform: translate(-50%,-50%);
+}
+#contentPage1{
+    position: absolute;
+    transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 1s;
+    opacity: 0;
+    width: 100%;
+    height: 70%;
+    bottom: 50px;
+    scale: 1.2;
+    text-align: center;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#nav a{
+    text-decoration: none;
+    color: white;
+}
+#nav a:hover{
+    color: greenyellow
+}
+#nav #navRight #srchbar input{
+    padding: 2px;
+    border-radius: 25px;
+    width: 15vw;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    padding-left: 1vw;
+}
+#nav #navRight #srchbar input::placeholder{
+    color: white;
+    font-size: 0.79vw;
+}
+#nav #navRight #srchbar i{
+    padding: 2px;
+    right: 18px;
+    position: absolute;
+}
+#main #fsnav{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -100%;
+    z-index: 999;
+    background-color: #f5f5e5;
+    color: #222;
+    transition: all ease 0.6s;
+}
+@media (max-width : 650px) {
+    #srchbar input{
+        display: none;
+    }
+    #contentPage1 video{
+        scale: 0.66;
+    }
+    #page2 #arrow{
+        width: 5vw;
+        height: 5vh;
+        left: 5vmin;
+    }
+    #pg2btns{
+        scale: 0.7;
+        flex-direction: column;
+        gap: 3vw;
+    }
+    #page2text{
+        font-size: 2vw;
+    }
+    #page3 #yeezyImg{
+        left: 60vw;
+    }
+    .ellipse{
+        left: 50vw;
+    }
+}
+#pg3btn{
+    border-radius: 4%;
+    border: 2px solid rgb(0, 0, 0);
+    width: 12vmax;
+    font-size:1vmax;
+    color: black;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 69vh;
+    left: 12vw;
+    transform: translate(-50%,-50%);
+    text-transform: uppercase;
+    padding: 0.3vh;
+    background-color: #f5f5e5;
+}
+#pg3btn:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+#cardContainer{
+    width: 100vw;
+    min-height: 100vh;
+    max-width: 100%;
+    background-color: transparent;
+    z-index: 999;
+    position: relative;
+    display: flex;
+    /*justify-content: center;
+    align-items: center;*/
+    opacity: 0;
+    pointer-events: none;
+}
+#pg3cards{
+    width: 100vw;
+    max-width: 100%;
+    /*min-height: 65vh;*/
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.crdpg3{
+    margin: 12px;
+    background-color: rgb(0, 0, 0);
+    height: 400px;
+    width: 280px;
+    border-radius: 5%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10%;
+    padding: 2%;
+    transition: all ease 0.4s;
+}
+.crdpg3 img{
+    position: relative;
+    height: 200px;
+    width: 180px;
+    transform: rotate(37deg);
+}
+.crdpg3 .crdpg3Text{
+    width: 100%;
+    font-size: 0.8vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.crdpg3 i{
+    position: absolute;
+    top: 4%;
+    right: 4%;
+}
+.crdpg3 button{
+    border-radius: 8%;
+    margin-top: 2%;
+    width: 40%;
+    padding: 2%;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+}
+#crdpg3nav{
+    color: black;
+    position: absolute;
+    right: 2%;
+    top: 2%;
+    scale: 2;
+    margin-top: 2vmax;
+    transition: all ease ;
+}
+#page4{
+    width: 100vw;
+    max-width: 100%;
+    min-height: 100vh;
+    position: relative;
+    background-color: black;
+}
+#pg4up{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    max-width: 100%;
+    height: 30vh;
+}
+#page4 #coupon{
+    background: #dadada;
+    width: 600px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

@@ -1,0 +1,115 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+    user-select: none;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    position: relative;
+     width: 100%;
+    height: 100%;
+    background-image: url(https://plus.unsplash.com/premium_photo-1694475582173-f5376869e650?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+        
+}
+
+#nav{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 90px;
+    width: 100%;
+    height: 50px;
+}
+#nav #nlinks{
+    position: absolute;
+    color: white;
+    letter-spacing: 5px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#nlinks a{
+    color: #000;
+    text-decoration: none;
+    margin-left: 30px;
+    font-size: 17px;
+    font-weight: 500;
+}
+#nav h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 19px;
+    font-weight: 500;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    border: 3px solid white;
+}
+#nav i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
+    border-radius: 50px;
+    background-color: white;
+}
+#one{
+    position: absolute;
+    top: 20%;
+    left: 5%;
+}
+#one h1{
+    font-family: 'Voyage';
+    font-size: 90px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    line-height: 1;
+}
+#one h3{
+    font-family: 'Voyage';
+    font-size: 70px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    line-height: 1;
+}
+#textandline{
+    display: flex;
+}
+#one #textandline #line{
+    width: 80%;
+    height: 3px;
+    background-color: black;
+}
+#one #textandline p{
+    font-size:12px;
+    font-weight: 50;
+    letter-spacing: 2;
+    line-height: 1;
+}
+#last{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+    position: absolute;
+    width: 60%;
+    height: 18%;
+    color: black;
+    background-color: white;
+    bottom: 0;
+}
+#last .sec p{
+    font-weight: 500;
+font-size: 14px;
+    opacity: 0.5;
+}

@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width:100%;
+    height: 100%;
+}
+#main{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+#left{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1608245449230-4ac19066d2d0?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}  
+#nav{
+    margin-top: 8px;
+    padding: 0 60px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    animation-name: kunal;
+    animation-duration: 2sec;
+    animation-delay: 1sec;
+}
+#nav>h1{
+    color: whitesmoke;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-family: "Anurati";
+}
+
+#nav i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 25px;
+    font-weight: 700;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    background-color: white;
+}
+#text{
+    position: absolute;
+    top: 60%;
+    right: -15%;
+    animation-name: move;
+    animation-duration: 2s;
+    animation-delay: 1sec;
+    animation-fill-mode: backwards;
+    transform: translate(-50%,-50%);
+}
+#text h1{
+    font-size: 7vw;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 4px;
+    font-family: "voyage";
+}
+#right{
+    position: relative;
+    width: 50%;
+    overflow: hidden;
+    height:100%;
+     background-color: #1b1713;
+}
+ #right #img1{
+    position: absolute;
+    top: 38%;
+    left: 5%;
+    height: 300px;
+    width: 200px;
+    background-image: url(https://images.unsplash.com/photo-1576438162986-c685b1cfed7a?q=80&w=1952&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    object-position: center;
+}
+#right #img2{
+    position: absolute;
+    top: 3%;
+    left: 45%;
+    height: 300px;
+    width: 200px;
+    background-image: url(https://images.unsplash.com/photo-1562519819-016930ada31b?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    object-position: center;
+}
+#right #img3{
+    position: absolute;
+    top: 70%;
+    left: 45%;
+    height: 300px;
+    width: 200px;
+    background-image: url(https://images.unsplash.com/photo-1558648243-33c2ca3bf161?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    object-position: center;
+}
+#right h1{
+    position: absolute;
+    font-family: "voyage";
+    color: #fff;
+    transform: rotate(90deg);
+    top: 50%;
+    left: 60%;
+    font-size: 70px;
+    letter-spacing: 7px;
+}
+@keyframes move {
+    0%{
+        right:-100%;
+        opacity: 0;
+    }
+    100%{
+        right: -15%;
+        opacity: 1;
+    }
+    
+}
+

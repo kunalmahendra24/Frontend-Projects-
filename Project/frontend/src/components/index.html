@@ -1,0 +1,47 @@
+<!-- frontend/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Wellness Log</title>
+</head>
+<body>
+  <h1>🧘 Wellness Log Form</h1>
+  <form id="logForm">
+    <label>
+      Date:
+      <input type="date" id="date" required />
+    </label><br><br>
+    <label>
+      Mood:
+      <input type="text" id="mood" required />
+    </label><br><br>
+    <label>
+      Notes:
+      <textarea id="notes"></textarea>
+    </label><br><br>
+    <button type="submit">Submit Log</button>
+  </form>
+
+  <script>
+    document.getElementById("logForm").addEventListener("submit", async function (e) {
+      e.preventDefault();
+
+      const date = document.getElementById("date").value;
+      const mood = document.getElementById("mood").value;
+      const notes = document.getElementById("notes").value;
+
+      const res = await fetch("http://localhost:5000/api/logs", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ date, mood, notes }),
+      });
+
+      const data = await res.json();
+      alert("✅ Log submitted: " + JSON.stringify(data));
+    });
+  </script>
+</body>
+</html>

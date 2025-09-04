@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Voyage';
+    user-select: none;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(39, 38, 38);
+}
+#mtext{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 999;
+    transform: translate(-50%,-50%);
+}
+#mtext h1{
+    white-space: nowrap;
+    font-size: 9vw;
+    color: #fff;
+    font-weight: 100;
+}
+#mtext h3{
+    white-space: nowrap;
+    font-size: 5vw;
+    color: #fff;
+    font-weight: 100;
+}
+#left{
+    position: relative;
+    width: 45%;
+    height: 100%;
+
+}
+#centerimg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width:40%;
+    height: 45%;
+    background-image: url(https://images.unsplash.com/photo-1614786269829-d24616faf56d?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+#centerimg #text{
+    position: absolute;
+    width:100%;
+    bottom: -20%;
+}
+#text{
+    gap: 10px;
+    display: flex;
+}
+#text #parts{
+    width: 100%;
+    color: black;
+}
+#text #parts h5 {
+    color: white;
+    font-family: "Montserrat";
+    font-weight: 500;
+    margin-bottom: 2px;
+    line-height: 20px;
+}
+
+#text #para{
+    width: 100%;
+}
+#text #para h5{
+    color: #fff;
+    width: 100%;
+    line-height: 20px;
+    margin-bottom: 2px;
+    font-family: 'Montserrat';
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+#nav{
+    display: flex;
+    padding: 40px 50px;
+    gap: 80px;
+}
+#nav h3{
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: white;
+}
+#nav a{
+    letter-spacing: 3px;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+#scroll{
+    gap: 15px;
+    display:flex;
+    position: absolute;
+    align-items: center;
+    transform-origin:0% 50%;
+    transform: rotate(-90deg);
+    bottom: 0;
+    left: 10%;
+}
+#scroll #line{
+    width:200px;
+    height:2px;
+    background-color: white;
+}
+#scroll h4{
+
+    letter-spacing: 10px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+#center{
+    position: relative;
+    width: 45%;
+    height: 100%;
+  background-image: url(https://images.unsplash.com/photo-1616065297556-f05bc00c9a3e?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;  
+
+}
+#card{
+    display: flex;
+    position:absolute ;
+    width:30%;
+    bottom: 10%;
+    right: -95px;
+    height: 40%;
+    background-color: red;
+}
+#card #cimages{
+    width: 100%;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1614786277041-528f72aa9b03?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+#right{
+    width: 10%;
+    height: 100%;
+}

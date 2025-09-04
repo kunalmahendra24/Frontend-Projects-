@@ -1,0 +1,139 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://s3-eu-central-1.amazonaws.com/www.burger-king.ng/wp-media-folder-bk-nigeria/home/ubuntu/preview/menu-app/frontend/apps/marketing-website-wordpress-app/web/app/uploads/sites/12/Artboard-15-20.jpg);
+    background-size: cover;
+}
+
+#body {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+#newid{
+    width: 100%;
+    height: 100%;
+    background-image: url(https://burgerking.com.mt/wp-content/uploads/2021/04/banner.jpg);
+    background-size: cover;
+}
+
+.navbar {
+    background-color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.navdiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo a {
+    font-size: 35px;
+    font-weight: 600;
+    color: #FF0800;
+    letter-spacing: 10px;
+    text-decoration: none;
+}
+
+.logo a:hover {
+    color: #FFFF00;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+}
+
+li a {
+    color: #FF0800;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-right: 25px;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+li a:hover {
+    color:yellow;
+    background-color: #0ef;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    margin-left: 0;
+}
+
+.search-input {
+    padding: 8px;
+    border: 2px solid violet;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+#body {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.search-input:hover {
+    text-shadow: 0 0 3px #FF0000;
+}
+
+.button-container {
+    position: absolute;
+    top: 50px;
+    right: 90px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.dinein-takeaway-button, .delivery-button {
+    background-color: black;
+    color: black;
+    padding: 20px 60px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bolder;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.dinein-takeaway-button a, .delivery-button a {
+    color:white;
+    text-decoration: none;
+}
+
+.dinein-takeaway-button:hover, .delivery-button:hover {
+    background-color:orange;
+}

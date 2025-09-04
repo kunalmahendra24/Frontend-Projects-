@@ -1,0 +1,147 @@
+*{
+    margin:0;
+    height:0;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+}
+body,html{
+    width:100%;
+    height:100%
+}
+#main{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://plus.unsplash.com/premium_photo-1680103200497-3e5107407bde?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+#maintext {
+    position: absolute;
+    top: 50%;
+    left: 30px;
+}
+#maintext #line{
+    width: 200px;
+    height: 3px;
+    background-color: black;
+}
+#maintext h1{
+    font-family: "Alfa Slab One";
+    font-size: 6vh;
+    color: white;
+    font-weight:100;
+    letter-spacing: 8px;
+}
+
+#nav{
+    height: 60px;
+    padding: 0px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#text1{
+    transform: translate(50%,-50%);
+}
+#nav #text1  h3{
+    font-weight: 500;
+    color: black;
+}
+#nav #text1  h5{
+    font-size: 14px;
+    font-weight:500;
+    margin-top:5px;
+    margin-left: 20px;
+    color: rgb(0, 0, 255);
+}
+#nav #text1  h4{
+    font-weight: 500;
+    margin-top: 2px;
+    color:rgb(0, 0, 255);
+}
+#nav #content a{
+    text-decoration: none;
+    font-size: 18px;
+    margin-right: 70px;
+    font-family: "gilroy";                        
+    color: black;
+}
+#nav #icon1 i{
+    position: absolute;
+    font-size: 25px; 
+    color: blue;
+    margin-left: -100px;                                                                                                                                                   
+}
+#nav #icon3 i{
+    color: blue;
+    position: absolute;
+    font-size: 25px; 
+    margin-left: -210px;                                                                                                                                                   
+}
+#bottom{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    bottom: 0;
+}
+#bottom #texting{
+    padding: 0 100px;
+    width: 50%;
+    height: 100%;
+}
+#bottom #texting h2{
+    color: white;
+    opacity: 0.8;
+    font-weight: 400;
+}
+
+#bottom #images{
+    display: flex;
+    width: 50%;
+    height: 100%;
+}
+#bottom #images #img1{
+    width: 25%;
+    height: 60%;
+    background-image: url(https://images.unsplash.com/photo-1497671954146-59a89ff626ff?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+#bottom #images #img2{
+    width: 25%;
+    height: 60%;
+    background-image: url(https://images.unsplash.com/photo-1516009212334-1d105d6a1bb8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+#bottom #images #img3{
+    width: 25%;
+    height: 60%;
+    background-image: url(https://images.unsplash.com/photo-1622228628676-c9090a44c0ed?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+#bottom #images #img4{
+    position: relative;
+    width: 25%;
+    height: 60%;
+    background-image: url(https://images.unsplash.com/photo-1502260719774-d3b39c00cf08?q=80&w=2067&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+#icon2{
+    position: absolute;
+    right:0;
+    margin-top: 25px;
+}
+#icon2 i{
+    border-radius: 50%;
+    z-index: 99;
+    font-size: 60px;
+    border-radius: 50%;
+    color: black;
+    background-color: white;
+    
+}

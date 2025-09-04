@@ -1,0 +1,151 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+   width: 100%;
+   height: 100%;
+}
+#body{
+    width: 100%;
+    height:100%;
+}
+#main{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+#left{
+    width: 80%;
+    height: 100%;
+}
+#ltop{
+    width: 100%;
+    height: 70%;
+    background-image: url(https://images.unsplash.com/photo-1466781783364-36c955e42a7f?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+   background-size: cover;
+}
+#lbottom{
+    width: 100%;
+    height: 30%;
+    background-color: rgb(0, 0, 0);
+    padding: 50px 180px;
+}
+#lbtmcontent{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 30PX;
+}
+#contentleft{
+    width: 45%;
+    height: 30px;
+   color: white;
+}
+#contentleft p{
+    width: 70%;
+    margin-top: 20px;
+    font-size: 12px;
+}
+#contentright{
+    width: 45%;
+    height: 30px;
+    color: white;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.rowelem{
+    display: flex;
+}
+.rowelemtext{
+    margin-left: 10px;
+}
+.rowelemtext p{
+    font-size: 10px;
+    margin-top: 5px;
+    opacity: 0.7;
+}
+#right{
+    width: 20%;
+    height: 100%;
+}
+ #right #rtop{
+    padding: 70px 40px;
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 3px;
+    width: 100%;
+    height: 70%;
+    background-color:whitesmoke;
+}
+#rtop a{
+    color: black;
+    text-decoration: none;
+    font-weight: 006;
+    font-size: 16px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+}
+#rtop a:nth-child(2){
+    position: relative;
+    margin-left: 50px;
+}
+#rtop a:nth-child(2)::before{
+    content: "";
+    left: -20px;
+    top:6px;
+    width: 14px;
+    height: 3px;
+    background-color: black;
+    position: absolute;
+}
+#btmflower{
+    position: absolute;
+    width:200px;
+    height: 150px;
+    background-image: url(https://images.unsplash.com/photo-1502810365585-56ffa361fdde?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+   background-position: center;
+    background-size: cover;
+    right: 100px;
+    bottom: 213px;
+}
+#btmflower i{
+    position: absolute;
+    width: 20px;
+    height:10px;
+}
+#right #icon{
+    top: 20px;
+    right: 30px;
+    position: absolute;
+    font-size: 25px;
+}
+#rbottom{
+    position: relative;
+    width: 100%;
+    height: 30%;
+    background-color: #dadada;
+    background-image: url(https://images.unsplash.com/photo-1536727510301-a2e7a31bb6cf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+}
+#paragraph{
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    top:0px;
+}
+#paragraph h6{
+    font-size: 15px;
+    font-weight: bolder;
+    margin-top: 9px;
+    font-family: 'Montserrat';
+}
+
+

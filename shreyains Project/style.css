@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    width: 100vw;
+    height: 100vh;
+}
+#fullscreen-nav{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 60vh;
+    padding: 100px 20px;
+    font-family: 'AdihausDIN';
+    gap: 30px;
+    top: -100vh;
+    transition: all ease 0.7s;
+    background-color:#d1d1d1;
+    z-index: 9999;
+}
+#fullscreen-nav #div1 h3{
+    white-space: nowrap;
+    font-size: 16px;
+}
+#fullscreen-nav #div1 h5{
+    white-space: nowrap;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 15px;
+}
+#fullscreen-nav #div1 a{
+    white-space: nowrap;
+    font-size: 13px;
+    font-weight: 550;
+    color: black;
+    letter-spacing: 2px;
+}
+#fullscreen-nav #div1 a:hover{
+    background-color: black;
+    color: white;
+    text-decoration: none;
+}
+#fullscreen-nav #div2 {
+    width: 25%;
+    margin-left: 100px;
+}
+#fullscreen-nav #div2 h3{
+    white-space: nowrap;
+    font-size: 16px;
+}
+#fullscreen-nav #div2 h5{
+   font-weight: 500;
+   margin-top: 10px;
+   margin-bottom: 20px;
+}
+#fullscreen-nav #div2 a {
+    color: black;
+    font-size: 13px;
+    font-weight: 550;
+    letter-spacing: 2px;
+ }
+ #fullscreen-nav #div2 a:hover {
+    color: white;
+    text-decoration: none;
+    background-color: black;
+ }
+ #fullscreen-nav #div3 {
+    margin-left: 20px;
+    width: 25%;
+ }
+ #fullscreen-nav #div3 h3 {
+    font-size: 15.8px;
+ }
+ #fullscreen-nav #div3 h5 {
+    font-size: 14px;
+    margin-top: 9px;
+    font-weight: 500;
+ }
+ #fullscreen-nav #div3 a {
+    color: black;
+    font-weight: 550;
+    font-size: 14px;
+ }
+ #fullscreen-nav #div3 a:hover {
+    color: white;
+   background-color: black;
+   text-decoration: none;
+ }
+ #fullscreen-nav #div4 {
+    margin-left: 10px;
+ }
+ #fullscreen-nav #div4 h3 {
+    font-size: 16px;
+ }
+ #fullscreen-nav #div4 h5 {
+    font-weight: 500;
+    margin-top: 10px;
+ }
+ #fullscreen-nav #div5 i {
+   font-size: 45px;
+   position: absolute;
+   top: 10px;
+   right: 20px;
+   background-color: black;
+   border-radius: 50%;
+   color: white;
+   cursor: pointer;
+ }
+#navbar{
+    width: 100%;
+    height: 17vh;
+    position: relative;
+}
+#navbar #nav1{
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    height: 5.5vh;
+    background-color: black;
+}
+#navbar #nav1 h1{
+    font-size: 12px;
+    font-family: 'AdihausDIN';
+    letter-spacing: 1px;
+}
+#navbar #nav1 i{
+    font-size: 20px;
+    cursor: pointer;
+}
+#navbar #nav2{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 5px 50px;
+    padding-top: 20px;
+    width: 100%;
+    background-color:#ffffff;
+    height: 10.5vh;
+    position: relative;
+    
+}
+#nav2 #img1 img{
+    height: 40px;
+}
+#content{
+    gap: 25px;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins';
+    letter-spacing: 2px;
+    margin-left: 180px;
+    margin-top: 13px;
+   
+}
+#content h5{
+    font-size: 14px;
+    font-family: 'Poppins';
+}
+#content h5 span{
+    font-weight: 500;
+}
+#content2{
+    gap: 25px;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins';
+    margin-top:7px;  
+}
+#content2 #input{
+    padding: 0 10px;
+    width: 180px;
+    height: 28px;
+    background-color: rgba(216, 215, 215, 0.507);
+    border: none;
+}
+#content2 i{
+    font-size: 20.5px;
+    cursor: pointer;
+}
+#content2 #clue {
+    position: absolute;
+}
+#imagemain {
+    position: relative;
+}
+#imagemain video{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+#page1{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+#page1 video{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+#page1 #page1-content{
+    position: absolute;
+    padding: 40px 20px;
+    top: 36%;
+    left: 5%;
+    width: 50%;
+    font-family: "AdihausDin";
+}
+#page1 #page1-content h4{
+    font-weight: 500;
+    width: 60%;
+    margin-bottom: 25px;
+}
+#page1 #page1-content #page1-button{
+    display: flex;
+    gap: 7px;
+    justify-content: center;
+    color: #d1d1d1;
+    background-color: black;
+    align-items: center;
+    width: 25%;
+    height: 50px;
+    cursor: pointer;
+}
+#page1 #page1-content #page1-button i{
+   font-size: 22px;
+   margin-bottom: 2px;
+}
+

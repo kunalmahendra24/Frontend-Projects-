@@ -1,0 +1,160 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    font-family: "";
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+#left{
+    position: relative;
+    width: 35%;
+    height: 100%;
+    background-color: white;
+}
+#left #image{
+    position: absolute;
+    background-image: url(https://w0.peakpx.com/wallpaper/819/523/HD-wallpaper-nike-logo-nike-wallpaped-nike-logo-nike-nike-logo-nike-thumbnail.jpg);
+    background-position: center;
+    width: 200px;
+    height: 100px;
+    border: none;
+    top: 0;
+    left: 15px;
+    border-radius: 3%;
+}
+#left #text{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    width: 70%;
+    color: black;
+}
+#left #text h1{
+    font-size: 60px;
+    line-height: 1;
+}
+#left #text h1 span{
+    font-weight: 200;
+}
+#text h2{
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+#text p{
+    margin-top: 10px;
+    width: 60%;
+    font-size: 12px;
+    line-height: 1.8;
+    opacity: 0.7;
+}
+#text button{
+    padding: 10px 22px;
+    margin-top: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: black;
+    color: whitesmoke;
+    font-size: 16px;
+    font-weight: 400;
+}
+#left #text2 {
+    position: absolute;
+    bottom: 2%;
+    width: 90%;
+    color:#fff;
+    background-color: black;
+    padding:20px;
+}
+#left #text2 h2{
+    font-weight: 500;
+}
+#left #text2 p{
+    margin-top: 10px;
+    opacity: 0.7;
+    font-size: 12px;
+}
+#right{
+    position: relative;
+    width: 65%;
+    height: 100%;
+    background-color: rgba(14, 9, 9, 0.932);
+}
+#right>img{
+    position: absolute;
+    width: 60%;
+    left: -5%;
+    top: 45%;
+    transform: translate(-50%,-50%) rotate(-30deg);
+}
+#right #text3{
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    width: 70%;
+    color: #fff;
+}
+#right #text3 h1{
+    font-size: 60px;
+}
+#right #text3 h1 span{
+    color: red;
+}
+#right #text3 h2{
+    margin-top: 5px;
+    font-weight: 400;
+}
+#right #text3 p{
+    width: 70%;
+    margin-top: 5px;
+    line-height: 2;
+    font-size: 12px;
+}
+#right #text3 h2 span{
+    color: orange;
+}
+#right #text3 h2  a{
+    color: green;
+    text-decoration: none;
+}
+ #text3 #bttns{
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+#text3 #bttns button{
+    padding: 14px 22px;
+    font-size: 15px;
+}
+#text3 button:nth-child(1){
+    background-color:whitesmoke;
+    border-radius: 10px;
+}
+#text3 button:nth-child(2){
+    background-color:rgba(231, 46, 46, 0.699);
+    border-radius: 100px;
+    font-weight: 500;
+}
+#samples{
+    margin-top: 30px;
+    display: flex;
+    gap: 30px;
+}
+.sample{
+    width: 100px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.sample img{
+    width: 100%;
+}
+
